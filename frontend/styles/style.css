@@ -1,14 +1,164 @@
-*,
-*::after,
-*::before {
+body, h1, h2, p, input, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    background-color: #F7DED0 ;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
+
+
+.image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+   width: 150px;
+    height: 150px;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #9B4444;
+    margin-bottom: 20px;
+    font-family: 'special elite', sans-serif;
+}
+
+
+form {
+    background: #FEECE2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0000001a;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'poetsen one', sans-serif;
+    color: #585656;
+    font-size: 1rem;
+}
+
+form input {
+    background-color: #f7f2f2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+.error {
+    color: #a00c0c;
+    margin-bottom: 15px;
+    font-family: 'poetsen one', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.recipe {
+    background: #FEECE2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0000001a;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.ingredients {
+    font-weight: bolder;
+}
+
+.instructions {
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+.recipe .title {
+    font-family: 'special elite', sans-serif;
+    font-size: 1.5rem;
+    color: #9B4444;
+    margin-bottom: 10px;
+}
+
+.recipe .ingredients, .recipe .instructions {
+    margin-bottom: 10px;
+}
+
+.recipe .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.recipe button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    color: #811414;
+}
+
+.recipe button.delete:hover {
+    color: red;
+}
+
+.recipe button.edit:hover {
+    color: #007bff;
+}
+
+.recipe button i {
+    pointer-events: none;
+}
+
+
+.recipes, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
